@@ -1,0 +1,25 @@
+Ini, TOML
+
+name = "social-scheduler-worker"
+main = "src/index.js"
+compatibility_date = "2023-12-01"
+
+# KV Namespace for storing user OAuth tokens
+[[kv_namespaces]]
+binding = "USER_TOKENS"
+id = "your_kv_namespace_id_here" # Replace with your actual KV namespace ID after creating it
+
+# Secrets - These must be set in your Cloudflare dashboard or via `wrangler secret put`
+# wrangler secret put GEMINI_API_KEY
+# wrangler secret put JWT_SECRET
+# wrangler secret put TWITTER_CLIENT_ID
+# wrangler secret put TWITTER_CLIENT_SECRET
+# ... and so on for other platforms
+[vars]
+BASE_URL = "http://localhost:8787" # Change to your production URL on deploy
+
+[durable_objects]
+bindings = []
+
+[r2_buckets]
+bindings = []

@@ -1,0 +1,16 @@
+
+{
+  "name": "social-scheduler-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "hono": "^4.1.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.35.0"
+  }
+}
