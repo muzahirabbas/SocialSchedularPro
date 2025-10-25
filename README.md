@@ -10,6 +10,7 @@ This application provides a seamless interface to compose a social media post on
 
 ### Core Features
 
+
   * **✍️ Unified Composer:** A single interface to write captions, upload media, and select target platforms.
   * **🔗 Multi-Platform Support:** Connect and post to **X (Twitter)**, **LinkedIn**, **Facebook**, **Instagram**, and **TikTok**.
   * **🤖 AI-Powered Shortening:** Automatically shortens captions that exceed X's character limit using the **Google Gemini API**, preserving the original message's intent.
@@ -319,5 +320,6 @@ Follow these steps to deploy your application to production.
 ### 3\. Final Step: Update Callback URLs
 
 Go back to the developer portals for each social media platform and **add your production callback URLs** (e.g., `https://social-scheduler-pro.pages.dev/api/auth/twitter/callback`). This is required for login to work on your live site.
+
 
 Your application is now fully deployed\!
